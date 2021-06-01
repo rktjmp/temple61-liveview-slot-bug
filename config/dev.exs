@@ -60,8 +60,8 @@ config :bug, BugWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/bug_web/(live|views)/.*(ex)$",
-      ~r"lib/bug_web/templates/.*(eex)$"
+      ~r"lib/bug_web/(live|views)/.*(ex|exs|lexs)$",
+      ~r"lib/bug_web/templates/.*(eex|exs|lexs)$"
     ]
   ]
 

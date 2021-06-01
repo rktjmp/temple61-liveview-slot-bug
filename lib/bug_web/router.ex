@@ -25,6 +25,8 @@ defmodule BugWeb.Router do
 
     live "/users/:id", UserLive.Show, :show
     live "/users/:id/show/edit", UserLive.Show, :edit
+
+    live "/test", UserLive.Test, :test
   end
 
   # Other scopes may use custom stacks.

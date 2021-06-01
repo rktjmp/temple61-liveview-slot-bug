@@ -91,6 +91,8 @@ defmodule BugWeb do
       import BugWeb.ErrorHelpers
       import BugWeb.Gettext
       alias BugWeb.Router.Helpers, as: Routes
+
+      require Temple.Component
     end
   end
 

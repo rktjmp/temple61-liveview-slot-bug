@@ -1,1 +1,5 @@
 p do: "Test View"
+
+c Bug.Components.AComponent, value: 100 do
+  p do: "This is the default slot content"
+end

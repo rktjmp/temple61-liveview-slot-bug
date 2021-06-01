@@ -33,14 +33,18 @@ defmodule Bug.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.5.9"},
+      # {:phoenix, "~> 1.5.9"},
+{:phoenix, [env: :prod, git: "https://github.com/phoenixframework/phoenix.git", branch: "v1.5", override: true]},
       {:phoenix_ecto, "~> 4.1"},
       {:ecto_sql, "~> 3.4"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_live_view, "~> 0.15.1"},
+      # {:phoenix_live_view, "~> 0.15.1"},
       {:floki, ">= 0.30.0", only: :test},
       {:temple, "~> 0.6.1"},
-      {:phoenix_html, "~> 2.11"},
+      {:phoenix_view, github: "phoenixframework/phoenix_view", override: true},
+      {:phoenix_live_view, github: "phoenixframework/phoenix_live_view", override: true},
+{:phoenix_html, [env: :prod, git: "https://github.com/phoenixframework/phoenix_html.git", override: true]},
+      # {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_dashboard, "~> 0.4"},
       {:telemetry_metrics, "~> 0.4"},
